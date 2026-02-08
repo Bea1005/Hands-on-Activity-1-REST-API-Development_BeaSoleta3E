@@ -33,3 +33,7 @@ Submission Checklist
 3. [✓] Error handling (400/404) is implemented.
 4. [✓] GitHub Repo link submitted.
 5. [✓] README.md explains the "Why" behind the code.
+
+Hands On Activity 2
+UPDATE Github
+<img width="949" height="488" alt="image" src="https://github.com/user-attachments/assets/d83b789c-4ee7-4596-8151-975f8e2b0cb8" />
