@@ -4,11 +4,13 @@ const mongoose = require('mongoose');
 const transactionSchema = new mongoose.Schema({
   description: {
     type: String,       
-    required: true
+    required: true,
+    minlength: [3,  'Description must be at least 3 characters long']
   },
   amount: {
     type: Number,       
-    required: true
+    required: true,
+    min: [0.01, 'Amount must be greater that zero']
   },
   type: {
     type: String,       
@@ -16,9 +18,14 @@ const transactionSchema = new mongoose.Schema({
     required: true
   },
   date: {
-    type: Date,          
+    type: Date,
+    tags: [String],          
     default: Date.now    
-  }
+  },
+  user: {
+  type: mongoose.Schema.Types.ObjectId,
+  ref: 'User' 
+}
 });
 
 
