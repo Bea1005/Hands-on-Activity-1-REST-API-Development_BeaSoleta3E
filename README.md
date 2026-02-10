@@ -37,3 +37,14 @@ Submission Checklist
 Hands On Activity 2
 UPDATE Github
 <img width="949" height="488" alt="image" src="https://github.com/user-attachments/assets/d83b789c-4ee7-4596-8151-975f8e2b0cb8" />
+
+Deliverable
+Update your GitHub Repository.
+1. Create the New Model file (Chef, User, or Guest).✓
+2. Update your Main Model with Validations (min, max) and Relationships (ref, 
+embedded).✓
+3. In your README.md, answer:
+o "Why did I choose to Embed the [Review/Tag/Log]?"
+I chose to embed the tag to keep the context directly within the record. Embedding ensures clarity, traceability, and makes the information self-contained.  
+o "Why did I choose to Reference the [Chef/User/Guest]?"
+I referenced the User to highlight their role and add credibility. This connection makes the record more meaningful and tied to real contributors.  
