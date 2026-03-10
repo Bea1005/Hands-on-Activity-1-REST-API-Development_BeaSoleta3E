@@ -37,3 +37,36 @@ Submission Checklist
 Hands On Activity 2
 UPDATE Github
 <img width="949" height="488" alt="image" src="https://github.com/user-attachments/assets/d83b789c-4ee7-4596-8151-975f8e2b0cb8" />
+
+HANDS ON ACTIVITY 3
+Update your GitHub Repository.
+1. Create the New Model file (Chef, User, or Guest).
+2. Update your Main Model with Validations (min, max) and Relationships (ref,
+embedded).
+3. In your README.md, answer:
+o "Why did I choose to Embed the [Review/Tag/Log]?"
+I choose to Embed the 
+o "Why did I choose to Reference the [Chef/User/Guest]?"
+
+Submission Checklist & README.md
+Update your README.md with the following questions to prove your
+understanding:
+1. [ ] Code runs via npm run dev with no errors.
+2. [ ] Registration and Login endpoints are functional.
+![alt text](image-7.png)
+3. [ ] Middleware correctly blocks unauthorized users.
+4. [ ] GitHub Repo link submitted.
+5. [ ] README.md updated with the following answers:
+README.md Questions:
+1. Authentication vs Authorization:
+o What is the difference between Authentication and Authorization in our
+code?
+o Answer:
+2. Security (bcrypt):
+o Why did we use bcryptjs instead of saving passwords as plain text in
+MongoDB?
+o Answer:
+3. JWT Structure:
+o What does the protect middleware do when it receives a JWT from the
+client?
+o Answer:
