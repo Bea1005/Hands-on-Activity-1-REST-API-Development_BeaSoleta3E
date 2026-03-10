@@ -51,22 +51,27 @@ o "Why did I choose to Reference the [Chef/User/Guest]?"
 Submission Checklist & README.md
 Update your README.md with the following questions to prove your
 understanding:
-1. [ ] Code runs via npm run dev with no errors.
-2. [ ] Registration and Login endpoints are functional.
+1. [✓] Code runs via npm run dev with no errors.
+2. [✓] Registration and Login endpoints are functional.
 ![alt text](image-7.png)
-3. [ ] Middleware correctly blocks unauthorized users.
-4. [ ] GitHub Repo link submitted.
-5. [ ] README.md updated with the following answers:
+3. [✓] Middleware correctly blocks unauthorized users.
+4. [✓] GitHub Repo link submitted.
+5. [✓] README.md updated with the following answers:
 README.md Questions:
 1. Authentication vs Authorization:
 o What is the difference between Authentication and Authorization in our
 code?
 o Answer:
+- Authentication verifies the identity of a user (e.g., checking if their login credentials are valid).  
+- Authorization determines what resources or actions that authenticated user is allowed to access in the system.  
 2. Security (bcrypt):
 o Why did we use bcryptjs instead of saving passwords as plain text in
 MongoDB?
 o Answer:
+  - We use bcryptjs to hash passwords before storing them in MongoDB, ensuring that even if the database is compromised, attackers cannot read plain-text passwords. Hashing adds a layer of security by making passwords computationally expensive to reverse.  
+
 3. JWT Structure:
 o What does the protect middleware do when it receives a JWT from the
 client?
 o Answer:
+-The protect middleware validates the JWT sent by the client, ensuring it is authentic and not expired. If valid, it decodes the token to extract the user’s ID and attaches the user object to the request, granting access to protected routes.  
